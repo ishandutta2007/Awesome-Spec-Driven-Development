@@ -13,7 +13,10 @@ The technical framework governing spec-to-code synthesis has transitioned from r
 
 
 ```mermaid
-[Rigid Schema Compilers (Protobuf/OpenAPI)] ───> [Loose Prompt Code Generation (2022)] ───> [Multi-File Agentic Scaffolding] ───> [Unified Compiler Enclaves (Present)](Static Deterministic Syntax Stubs)             ( Fragile Conversational Code Blobs )        ( Multi-Hop Graph Dependency Solvers )       ( Hard Verifiable Ground-Truth Truths )
+flowchart LR
+    A["Rigid Schema Compilers (Protobuf/OpenAPI) (Static Deterministic Syntax Stubs)"] --> B["Loose Prompt Code Generation (2022) (Fragile Conversational Code Blobs)"]
+    B --> C["Multi-File Agentic Scaffolding (Multi-Hop Graph Dependency Solvers)"]
+    C --> D["Unified Compiler Enclaves (Present) (Hard Verifiable Ground-Truth Truths)"]
 ```
 
 *   **The Static Deterministic Schema Compilation Era (Traditional Software Baseline)**
@@ -55,7 +58,13 @@ To execute multi-file software refactoring without triggering execution stalls, 
 
 
 ```mermaid
-The Sandbox-Locked AI Spec Compilation Loop[Technical Specification File] ───> [Connectionist Policy Engine] ───> [Generate Hidden Thinking Tokens]│▼[Optimize Weights via PPO/DPO] <── [Calculate Hard Scalar Reward] <── [Execute Sandboxed Compiler Tests]
+flowchart TB
+    %% The Sandbox-Locked AI Spec Compilation Loop
+    A["Technical Specification File"] --> B["Connectionist Policy Engine"]
+    B --> C["Generate Hidden Thinking Tokens"]
+    C --> D["Execute Sandboxed Compiler Tests"]
+    D --> E["Calculate Hard Scalar Reward"]
+    E --> F["Optimize Weights via PPO/DPO"]
 ```
 
 
